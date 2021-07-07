@@ -1,0 +1,10 @@
+.footer{
+    
+    grid-column: 1/4; 
+    grid-row: 3/3; 
+    
+    opacity: 0.9;
+
+
+
+}

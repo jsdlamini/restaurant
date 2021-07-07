@@ -1,0 +1,122 @@
+.card {
+  /* background-color: rgba(28, 31, 38); */
+  background-color: #657a00;
+  box-shadow: 0 4px 8px 0 rgba(204, 20, 20, 0.2), 0 6px 20px 0 rgba(187, 7, 7, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  /* border: 1px solid yellowgreen; */
+
+  /* Apply shadow */
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 
+              0 2px 2px rgba(0, 0, 0, 0.1), 
+              0 4px 4px rgba(0, 0, 0, 0.1), 
+              0 8px 8px rgba(0, 0, 0, 0.1), 
+              0 16px 16px rgba(0, 0, 0, 0.1);
+
+
+  /* Positioning */
+  position: relative;
+  height: 100%;
+
+   /* border: 1px solid black; */
+ 
+
+  /* border-radius: 2%; */
+
+ }
+
+.card:hover{
+  transition: opacity .38s ease-in-out, transform .35s ease-in-out;
+   transform: scale3d(1.01, 1.01, 1.01);  
+    border: 1px solid #fff ;
+}
+
+
+.card__info {
+  /* margin: auto auto; */
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  top: 165px; 
+  /* right: 1px; */
+  background-color: black;
+   font-weight: 500;
+   font-size: 1.5em; 
+     color: white; 
+     border-radius: 50%;
+
+     opacity: 0.9;
+}
+
+
+.card__buy{
+
+  font-size: 1.2rem;
+    line-height: 2rem; 
+  /* padding: 2px;   */
+  position: absolute;
+  bottom: 0px; 
+
+  width: 100%;
+font-weight: 800; 
+background-color: #ca991d;
+
+   /* border: 1px solid #1400c6; */
+   color: rgb(40, 3, 143);
+
+   text-align: center; 
+   border-radius: 35px;
+   cursor: pointer;
+}
+/* .card__buy:hover{
+  border: 2px solid #1400c6; 
+}  */
+
+.card__content {
+  margin-top: 0px;
+  padding-top: 0px;
+  position: absolute;
+  top: 330px;
+ 
+}
+.card__content p {
+  /* line-height: 1.5;
+  font-size: 0.9em; */
+  font-weight: 800;
+  padding-left: 10px;
+  padding-top: 10px;
+   padding-bottom: 20px;
+ 
+  color: black;
+ background: white;
+   opacity: 0.9;
+ 
+}
+
+
+
+.card__content p:first-of-type {
+  margin-top: 0;
+}
+.card__content p:last-of-type {
+  margin-bottom: 0;
+}
+.card h2 {
+  color: whitesmoke;
+  
+  padding: 5px;
+}
+
+ img {
+  object-fit: cover;
+
+  /* Ensure image fits on card container */
+  width: 100%;
+  height: 100%;
+ 
+  /* display: block; */
+  margin-bottom: 0;
+}
