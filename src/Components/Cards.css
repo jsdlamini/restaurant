@@ -17,3 +17,17 @@
 
   margin-bottom: 5em;
   }
+
+
+   
+
+   @media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  .cards  {
+    padding-top: 5em;
+    padding-top: 165em;
+    /* flex-grow: 1; */
+    /* flex-wrap: wrap; */
+
+  }
+}

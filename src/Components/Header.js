@@ -9,8 +9,8 @@ const Header = () => {
 
         <div className="header">
 
-            <Nav />
 
+            <Nav />
             {/* <div className="cover_image"> */}
             <Carousel autoPlay
                 infiniteLoop

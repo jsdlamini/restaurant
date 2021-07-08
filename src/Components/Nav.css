@@ -1,80 +1,90 @@
-.nav{
-    background-color: #657a00;
- 
-  
+/* [ON BIG SCREENS] */
+/* (A) WRAPPER */
+.hamnav {
+  /* width: 100%;
+  background: #000;
+  /* Optional */
+  /* position: sticky;
+  top: 0;  */
 
+
+      background-color: #657a00;
     position: fixed;
-    top: 0px; 
-
+    top: 0;
     right: 0;
     left: 0;
     z-index: 10;
-
-    width: 100%;
-    /* background-color: #f1a81c; */
+    /* width: 100%; */
     padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    /* padding-bottom: 1rem; */
     display: flex;
-  
-    justify-content: space-between;
-}
+    justify-content: space-between; 
 
-.nav_brand{
-  
+
+}
+/* 
+.sm_wrapper{
+  display: flex; 
+} */
+
+ label > span , .logo_main { 
 
     line-height: 60px;
      font-size: 3rem;
      font-weight: 800 ;
       cursor: pointer;
+      padding-left: 3rem;
        /* color: red; */
     
 }
 
-.nav_brand > h3{
-  padding-left: 2.3rem; 
-  color: whitesmoke;
-  opacity: 0.8;
+
+/* (B) HORIZONTAL MENU ITEMS */
+.hamitems { display: flex; }
+.hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+ 
 }
-.nav > ul {
+.hamitems a:hover { background: #401408; }
 
-    margin-bottom: 0;
-    /* display: block; */
-    list-style: none; 
-    font-size: 1rem;
+/* (C) HIDE HAMBURGER */
+.hamnav   label, .hamnav  .hamburger { display: none; }
 
-      display: flex;
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  .hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
 
-      align-items: center;
-      justify-items: center;
+  }
 
-      
+  /* (B) SHOW HAMBURGER ICON */
+  .hamnav    label {
+    display: inline-block;
+    color: white;
+    background:transparent;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+   
+  }
+.hamnav     {
+    display: flex;
+        flex-direction: column;
+   
+  }
 
-      font-family: "Circular Medium";
-    font-weight: 400;
-  
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
 
-      justify-content: space-between;
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  .hamitems , .logo_main{ display: none; }
+  .hamnav   input:checked ~ .hamitems { display: block; }
 }
-
-li:hover {
- display: inline-block;
- cursor: hand;
-}
-
-
-.nav > ul > li > a {
-    text-decoration: none;
-}
-
-
-.nav > ul > li > a:visited, .nav > ul > li > a:visited:hover, .nav > ul > li > a:visited:active {
-  color: inherit;
-}
-
-
-
-

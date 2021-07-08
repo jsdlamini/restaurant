@@ -1,25 +1,26 @@
 import './Nav.css'
 
 const Nav = () => {
+
     return (
-        <div className='nav'>
+        <div className="hamnav">
+            <h1 className="logo_main">RestyChilla</h1>
+            <label for="hamburger">&#9776; <span>RestyChilla</span></label>
+            <input type="checkbox" className="hamburger" id="hamburger" />
 
-            <div className="nav_brand">
-                <h3>RestyChilla</h3>
-            </div>
 
 
-            <ul>
-                <li> <a href="/">  Location & Hours</a> </li>
-                <li><a href="/">Menu</a> </li>
-                <li><a href="/">OU STORY</a> </li>
-                <li><a href="/">PIVATE DINING</a> </li>
-                <li><a href="/">BUZZ</a> </li>
-                <li><a href="/">GIFT CARDS</a> </li>
-            </ul>
-
+            <div className="hamitems" id="hamitems">
+                <a href="/">  LOCATION & HOURS</a>
+                <a href="/">MENU</a>
+                <a href="/">OUR STORY</a>
+                <a href="/">PIVATE DINING</a>
+                <a href="/">BUZZ</a>
+                <a href="/">GIFT CARDS</a>
+            </div> 
 
         </div>
+
     )
 }
 

@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
 *{
   margin: 0;
-  padding: 0;
+  padding: 0; 
+   /* box-sizing: border-box; */
 }
 
 body, html{
-   /* background-color: #beef00; */
+
+  /* font-size: 62.5%; */
+  font-family: 'Roboto', sans-serif; 
 
    background-color: #657a00;
-   width: 100%;
+   /* width: 100%; */
+   max-width: 100%;
   height: 100%;
+    overflow-x: hidden;
+     overflow-y: scroll;
 }
-
