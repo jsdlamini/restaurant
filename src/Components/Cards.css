@@ -24,8 +24,9 @@
    @media screen and (max-width: 768px){
   /* (A) BREAK INTO VERTICAL MENU */
   .cards  {
-    padding-top: 5em;
-    
+   
+    padding-top: 80em;
+
 
   }
 }
