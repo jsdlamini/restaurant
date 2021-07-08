@@ -23,6 +23,8 @@
         /* font-family: "IBM Plex Serif", serif; */
         display: flex;
         flex-direction: column; 
+            margin: 0px;
+    padding: 0px;
     }
 
 
